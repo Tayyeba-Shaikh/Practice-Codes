@@ -1,0 +1,125 @@
+body {
+    background-color: #fff5cb;
+}
+.android-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.android-container .container {
+    position: relative;
+}
+.head {
+    width: 300px;
+    height: 150px;
+    background-color: #a4c639;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+.body {
+    height: 250px;
+    width: 300px;
+    background-color: #a4c639;
+    margin-top: 12px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.left-leg, .right-leg {
+    width: 60px;
+    height: 120px;
+    background-color: #a4c639;
+    border-radius: 0 0 50px 50px;
+}
+.left-leg {
+    left: 60px;
+    position: relative;
+    top: -15px;
+}
+.right-leg {
+    right: 60px;
+    position: absolute;
+    bottom: 15px;
+}
+.left-arm, .right-arm {
+    width: 65px;
+    height: 180px;
+    border-radius: 50px;
+    background-color: #a4c639;
+    position: absolute;
+}
+.left-arm {
+    left: -80px;
+    top: 160px;
+    transform-origin: top;
+    animation: wave infinite 3s ease-out;
+}
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(140deg);
+    } 
+    40% {
+        transform: rotate(120deg);
+    } 
+    50% {
+        transform: rotate(140deg);
+    } 
+    60% {
+        transform: rotate(120deg);
+    } 
+    70% {
+        transform: rotate(140deg);
+    } 
+    100% {
+        transform: rotate(0deg);
+    } 
+}
+.right-arm {
+    right: -80px;
+    top: 160px;
+}
+.left-antenna, .right-antenna {
+    background-color: #a4c639;
+    width: 10px;
+    height: 70px;
+    border-radius: 20px;
+    position: absolute;
+}
+.left-antenna {
+    top: -20px;
+    left: 55px;
+    transform: rotate(-25deg);
+    transform-origin: bottom;
+    animation: wiggle-left 1.5s infinite 0.3s;
+}
+.right-antenna {
+    height: 70px;
+    position: absolute;
+    top: -20px;
+    right: 45px;
+    transform: rotate(30deg);
+    transform-origin: bottom;
+    animation: wiggle-left 1.5s infinite 0.3s;
+ }  
+ .left-eye {
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 45px;
+ }
+ .right-eye {
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    right: 45px;
+ }
+    
